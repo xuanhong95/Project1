@@ -1,0 +1,108 @@
+﻿<Page x:Class="DataProcessing.Welcome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DataProcessing"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Welcome">
+    <Grid
+        Height="720"
+        Width="1280"
+        Background="White"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+        <!--Start Top bar-->
+        <Grid
+            Height="Auto"
+            Width="1280"
+            Background="White"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center">
+            <StackPanel
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center">
+                <Rectangle 
+                        Fill="#0e6633" 
+                        Height="130"
+                        Width="1280"
+                        Stroke="Transparent"
+                        StrokeThickness="0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center">
+                </Rectangle>
+                <Rectangle x:Name="the2ndtoprec" Fill="#009e49" 
+                           StrokeThickness="0"
+                           Height="15"
+                           Width="1280"
+                           Stroke="Transparent"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           Margin="0"/>
+            </StackPanel>
+            <Image
+                Source="/DataProcessing;component/Assets/name.png"
+                Width="160"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin=" 20 0 0 0">
+            </Image>
+        </Grid>
+        <!--End Top bar-->
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <Image
+                Source="/DataProcessing;component/Assets/intro.png"
+            Width="350"
+            Height="Auto"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+            </Image>
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="30">
+                Nhóm P1_01
+            </TextBlock>
+            <TextBlock FontSize="20" HorizontalAlignment="Center">
+                Hán Đức Toàn
+                <LineBreak></LineBreak>
+                Phạm Xuân Hồng
+                <LineBreak></LineBreak>
+                Phạm Khắc Hoài Nam
+            </TextBlock>
+        </StackPanel>
+        <!--Start Btm-->
+        <!--Start Sudung Button-->
+        <Grid
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="0 0 0 70 ">
+            <Rectangle
+                Fill="#009e49" 
+                Height="80"
+                Width="365"
+                Stroke="Transparent"
+                StrokeThickness="0">
+            </Rectangle>
+            <Button
+                Click="gotothietlapHeso"
+                Background="#55d455" 
+                Height="55"
+                Width="335"
+                BorderThickness="0">
+                <TextBlock
+                    Background="Transparent"
+                    Foreground="White"
+                    FontSize="30"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+                    SỬ DỤNG ỨNG DỤNG
+                </TextBlock>
+            </Button>
+            <!--End Sudung Button-->
+        </Grid>
+        <!--End Btm-->
+    </Grid>
+</Page>
